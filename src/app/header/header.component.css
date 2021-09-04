@@ -1,0 +1,8 @@
+.mat-toolbar{
+    background: transparent;
+    color: black;
+}
+
+.spaced-toolbar{
+   padding-left: 70%; 
+}
