@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'PersonalPortfolio';
+  isSidenav:boolean = false;
+  onSidenavEnabler(isEnable:boolean){
+    this.isSidenav=isEnable;
+  }
+
 }

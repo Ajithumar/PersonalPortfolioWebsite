@@ -4,7 +4,7 @@
 <mat-toolbar>
     <section fxLayout="row" fxLayout.xs="column"  fxLayoutAlign="start stretch">
    
-    <button mat-button fxHide.gt-xs><mat-icon>menu</mat-icon></button>
+    <button mat-button fxShow.gt-xs (click)="onSidenav()"><mat-icon>menu</mat-icon></button>
     <img src="assets/brand_img.png" > 
 <section fxFlexFill fxHide.lt-md></section>
     <button mat-button>projects</button>
