@@ -1,17 +1,30 @@
 
 <!-- set header logo -->
 
-<mat-toolbar>
-    <section fxLayout="row" fxLayout.xs="column"  fxLayoutAlign="start stretch">
-   
-    <button mat-button fxShow.gt-xs (click)="onSidenav()"><mat-icon>menu</mat-icon></button>
+    <section fxLayout="row" >
+   <section class="brand-image">
+    <button mat-button fxHide.gt-xs (click)="inputSidenav.toggle()"><mat-icon>menu</mat-icon></button>
     <img src="assets/brand_img.png" > 
-<section fxFlexFill fxHide.lt-md></section>
-    <button mat-button>projects</button>
-    <button mat-button>about</button>
-    <button mat-button>contact  </button>
+</section>
+<span fxFlexFill ></span>
+<section  fxHide.lt-sm>
+    <button mat-button>Projects</button>
+    <button mat-button>About</button>
+    <button mat-button>Contact </button>
+</section>
     </section>
-</mat-toolbar>
+
+    <!-- button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>My App</span>
+      <span class="example-spacer"></span>
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+       <mat-icon>share</mat-icon>
+     </button> -->
 
 
 

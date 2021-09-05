@@ -1,4 +1,6 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
+import { MatSidenav } from '@angular/material/sidenav';
+import { SidenavService } from '../service/sidenav.service';
 
 
 @Component({
@@ -8,15 +10,17 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  @Output()
-  enableSidenav: EventEmitter<boolean> = new EventEmitter();
-  constructor() { }
+  @Input('inputSidenav')
+  inputSidenav!: MatSidenav;
+ 
+  constructor(private sidenav:SidenavService) { }
 
   ngOnInit(): void {
   }
 
   onSidenav(){
-this.enableSidenav.emit(true);
+    console.log("toggle method");
+this.sidenav.toggle();
   }
 
 }

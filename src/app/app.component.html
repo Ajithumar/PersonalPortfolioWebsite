@@ -1,5 +1,20 @@
-<app-header (enableSidenav)="onSidenavEnabler($event)"></app-header>
-<app-sidenav *ngIf="isSidenav"></app-sidenav>
-<section class="namePng">
-<img  src="assets/ImAjith.png">
+
+
+<mat-sidenav-container  >
+    <mat-sidenav #sidenav mode="push">
+        <app-sidenav ></app-sidenav>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <mat-toolbar >
+            <app-header [inputSidenav]="sidenav">  </app-header>
+        </mat-toolbar>
+
+        <section class="namePng">
+            <img  src="assets/ImAjith.png">
 </section>
+
+    </mat-sidenav-content>
+  
+</mat-sidenav-container>
+

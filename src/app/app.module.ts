@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { MaterialModule } from './material/material.module';
+import { SidenavService } from './service/sidenav.service';
 
 
 
@@ -27,7 +28,7 @@ import { MaterialModule } from './material/material.module';
     FlexLayoutModule
     
   ],
-  providers: [],
+  providers: [ SidenavService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
