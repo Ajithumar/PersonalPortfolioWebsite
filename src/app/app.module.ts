@@ -9,6 +9,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { MaterialModule } from './material/material.module';
 import { SidenavService } from './service/sidenav.service';
+import { HomeComponent } from './home/home.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AboutComponent } from './about/about.component';
 
 
 
@@ -18,7 +21,10 @@ import { SidenavService } from './service/sidenav.service';
   declarations: [
     AppComponent,
     HeaderComponent,
-    SidenavComponent
+    SidenavComponent,
+    HomeComponent,
+    PageNotFoundComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

@@ -13,14 +13,14 @@ export class HeaderComponent implements OnInit {
   @Input('inputSidenav')
   inputSidenav!: MatSidenav;
  
-  constructor(private sidenav:SidenavService) { }
+  constructor(private sidenavService:SidenavService) { }
 
   ngOnInit(): void {
   }
 
   onSidenav(){
     console.log("toggle method");
-this.sidenav.toggle();
+this.sidenavService.toggle();
   }
 
 }
